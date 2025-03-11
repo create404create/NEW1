@@ -1,4 +1,74 @@
-/* Add this to your existing CSS */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f4f4f9, #e2e2e2);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2575fc;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #6a11cb;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#output {
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+/* Tic-Tac-Toe Game */
 .tic-tac-toe {
     position: fixed;
     bottom: 20px;
@@ -57,4 +127,26 @@
 
 .tic-tac-toe button:hover {
     background-color: #0056b3;
+}
+
+/* Footer Animation */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.animated-line {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
