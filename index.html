@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNC Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DNC Lookup</h1>
+        <input type="text" id="phoneNumber" placeholder="Enter Phone Number">
+        <button onclick="checkDNCStatus()">Check DNC Status</button>
+
+        <div id="result">
+            <h2>Results:</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+
+    <!-- Tic-Tac-Toe Game -->
+    <div class="tic-tac-toe">
+        <h3>Tic-Tac-Toe</h3>
+        <div class="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <p class="status"></p>
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+
+    <footer>
+        <div class="animated-line">
+            <p>CREATED BY EHTISHAM</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>
